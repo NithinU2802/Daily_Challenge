@@ -16,7 +16,7 @@ Output1 should be 2
 *******************************************************************************/
 import java.util.*;
 
-public class Main
+public class Solution
 {
 	public static void main(String[] args) {
 	Scanner x=new Scanner(System.in);
