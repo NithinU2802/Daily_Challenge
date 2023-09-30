@@ -40,7 +40,7 @@ and (2,0). Therefore, all cells in row
 *******************************************************************************/
 import java.util.*;
 
-public class Main
+public class BooleanMatrix
 {
     
     public static void booleanMatrix(int[][] matrix){
