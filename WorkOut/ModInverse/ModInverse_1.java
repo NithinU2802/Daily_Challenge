@@ -4,7 +4,7 @@
 
 *******************************************************************************/
 
-public class ModInverse
+public class ModInverse_1
 {
     
     static public long modInverse(int a, int m) {
