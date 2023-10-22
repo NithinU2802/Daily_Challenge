@@ -3,6 +3,7 @@
     Calculating Mod Inverse for the given numbers
 
 *******************************************************************************/
+import java.util.*;
 
 public class ModInverse_1
 {
@@ -16,6 +17,7 @@ public class ModInverse_1
 }
     
 	public static void main(String[] args) {
+	Scanner x=new Scanner(System.in);
 	int a=x.nextInt(),b=x.nextInt();
 	System.out.println(modInverse(a,b));
 	}
