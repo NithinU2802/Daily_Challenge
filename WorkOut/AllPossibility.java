@@ -1,5 +1,6 @@
-// all possible arrangement of n 
-
+/* 
+all possible arrangement of n using dynamic programming
+*/
 import java.util.*;
 
 public class Main {
