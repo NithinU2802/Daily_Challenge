@@ -68,6 +68,35 @@ class SumK
         int c=sumK(root.right,k);
         return a+b+c;
     }
+
+     public static Node binTree(String s){
+        String[] elements=s.split(" ");
+        if(elements.length==0 || elements[0].charAt(0)=='N')
+            return null;
+        Node root=new Node(Integer.parseInt(elements[0]));
+        Queue<Node> queue=new LinkedList<>();
+        queue.add(root);
+        int i=1;
+        while(!queue.isEmpty() && i<elements.length){
+            Node t=queue.remove();
+            String st=elements[i];
+            if(!st.equals("N")){
+                t.left=new Node(Integer.parseInt(st));
+                queue.add(t.left); 
+            }
+            i++;
+            if(i>=elements.length)
+                break;
+            st=elements[i];
+            if(!st.equals("N")){
+                t.right=new Node(Integer.parseInt(st));
+                queue.add(t.right);
+            }
+            i++;
+        }
+        return root;
+    }
+    
     
     public static int path(Node root,int k){
         if(root==null)
