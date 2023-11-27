@@ -56,10 +56,21 @@ Constraints:
 -109 ≤ K ≤ 109
 
 *******************************************************************************/
+import java.util.*;
+
+class Node{
+    int data;
+    Node left,right;
+    Node(int data){
+        this.data=data;
+        left=null;
+        right=null;
+    }
+}
 
 class SumK
 {
-    public int sumK(Node root,int k)
+    public static int sumK(Node root,int k)
     {
        if(root==null)
             return 0;
@@ -95,6 +106,14 @@ class SumK
             i++;
         }
         return root;
+    }
+    
+    public static void main(String[] arg){
+        Scanner x=new Scanner(System.in);
+        String s=x.nextLine();
+        Node head=binTree(s);
+        int k=x.nextInt();
+        System.out.println(sumK(head,k));
     }
     
     
