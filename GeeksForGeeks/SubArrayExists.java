@@ -36,9 +36,8 @@ Constraints:
 *******************************************************************************/
 import java.util.*;
 
-public class subArrayExists
+public class SubArrayExists
 {
-    
     public static boolean subArrayExists(int[] arr,int n){
         for(int i=0;i<n;i++){
             int s=0;
