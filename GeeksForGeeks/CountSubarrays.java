@@ -38,29 +38,25 @@ Constraints:
 *******************************************************************************/
 import java.util.*;
 
-public class CountSubarrays
+public class Main
 {
     
     static long countSubarrays(int a[], int n, int L, int R)  
     { 
         long res=0;
-        for(int i=0;i<n;i++){
-            int max=a[i];
-            if(max>R)
+        int i=0,j=0,c=-1;
+        while(j<n){
+            if(a[j]>=L && a[j]<=R)
+                c=j;
+            else if(a[j]>R){
+                j++;
+                i=j;
+                c=-1;
                 continue;
-            if(a[i]>=L)
-                res++;
-        int c=0;
-        int j = i + 1;
-        while (j < n && a[j] <= R) {
-            if (a[j] > max)
-                max = a[j];
-            if(max>=L)
-                c++;
+            }
+            if(c!=-1)
+                res+=(c-i)+1;
             j++;
-        }
-        if(max>=L)
-            res+=c;
         }
         return res;
     } 
@@ -71,7 +67,7 @@ public class CountSubarrays
 		int[] a=new int[n];
 		for(int i=0;i<n;i++)
 		    a[i]=x.nextInt();
-		int l=x.nextInt(),r=x.nextInt();
+	    int l=x.nextInt(),r=x.nextInt();
 		System.out.println(countSubarrays(a,n,l,r));
 	}
 }
