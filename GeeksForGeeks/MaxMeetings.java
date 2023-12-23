@@ -113,7 +113,8 @@ public class MaxMeetings{
             s[i]=x.nextInt();
         for(int j=0;j<N;j++)
             F[i]=x.nextInt();
-        List<Integer> meetings = maxMeetings(S, F, N);
+        Solution solution=new Solution();
+        List<Integer> meetings = solution.maxMeetings(S, F, N);
         System.out.println(meetings);  // Output: [1, 2, 4, 5]
     }
 }
