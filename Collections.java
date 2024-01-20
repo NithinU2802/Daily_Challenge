@@ -14,6 +14,10 @@ public class Main
 	Set<Integer> set=new HashSet<Integer>();
 	set.add(-1);
 	set.add(-2);
+	System.out.println(set);
+
+	ArrayList<String> list = new ArrayList<>(set);
+	System.out.println(list);
 	    
 	// ArrayList
 	List<Integer> s=new ArrayList<Integer>();
@@ -33,6 +37,7 @@ public class Main
 	a.add(1,1);
 	a.addAll(set);
 	a.add("Nithin");
+	a.remove(10);
 	System.out.println("contains: "+s.contains(a));
 	Object[] an=s.toArray();
 	System.out.println(an.length);
@@ -49,5 +54,7 @@ public class Main
 	linkedlist.add(9);
 	System.out.println(linkedlist.peek());
 	System.out.println(linkedlist);
+
+		
 	}
 }
