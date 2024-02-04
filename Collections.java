@@ -42,7 +42,15 @@ public class Main
 	Object[] an=s.toArray();
 	System.out.println(an.length);
 	System.out.println("List: "+a);
-	
+
+
+	// Queue
+	Queue<Integer> queue=new LinkedList<Integer>();
+	queue.add(20);
+	queue.add(30);
+	System.out.println(queue.remove());
+	System.out.println(queue.peek());
+		
 	// Linked List
 	LinkedList<Integer> linkedlist=new LinkedList<Integer>();
 	linkedlist.add(89);
