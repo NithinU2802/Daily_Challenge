@@ -44,6 +44,13 @@ public class Main
 	System.out.println("List: "+a);
 
 
+	//Stack
+	Stack<Integer> stack=new Stack<>();
+	stack.push(4);
+	stack.push(5);
+	System.out.println(stack.poll());
+	System.out.println(stack.peeek());
+
 	// Queue
 	Queue<Integer> queue=new LinkedList<Integer>();
 	queue.add(20);
