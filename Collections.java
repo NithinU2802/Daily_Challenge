@@ -70,6 +70,12 @@ public class Main
 	System.out.println(linkedlist.peek());
 	System.out.println(linkedlist);
 
+
+	// Pair
+	Pair x = new Pair(3, 4); 
+	Pair y = new Pair(3, 4); 
+	System.out.println(p1.equals(p2));
+
 		
 	}
 }
