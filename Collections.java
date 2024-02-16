@@ -76,6 +76,14 @@ public class Main
 	Pair y = new Pair(3, 4); 
 	System.out.println(p1.equals(p2));
 
+
+	// HashMap
+	Map<Integer,Integer> map=new HashMap<>();
+	map.put(9,4);
+	map.put(6,7);
+	map.put(4,6);
+	System.out.println("The set is: " + map.keySet()); 
+
 		
 	}
 }
