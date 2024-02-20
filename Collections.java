@@ -14,9 +14,12 @@ public class Main
 	Set<Integer> set=new HashSet<Integer>();
 	set.add(-1);
 	set.add(-2);
+	set.add(8);
+	System.out.println(set);
+	set.remove(-1);
 	System.out.println(set);
 
-	ArrayList<String> list = new ArrayList<>(set);
+	ArrayList<Integer> list = new ArrayList<>(set);
 	System.out.println(list);
 	    
 	// ArrayList
@@ -37,7 +40,7 @@ public class Main
 	a.add(1,1);
 	a.addAll(set);
 	a.add("Nithin");
-	a.remove(10);
+	a.remove(1);
 	System.out.println("contains: "+s.contains(a));
 	Object[] an=s.toArray();
 	System.out.println(an.length);
@@ -48,8 +51,8 @@ public class Main
 	Stack<Integer> stack=new Stack<>();
 	stack.push(4);
 	stack.push(5);
-	System.out.println(stack.poll());
-	System.out.println(stack.peeek());
+	System.out.println(stack.pop());
+	System.out.println(stack.peek());
 
 	// Queue
 	Queue<Integer> queue=new LinkedList<Integer>();
@@ -59,7 +62,7 @@ public class Main
 	System.out.println(queue.peek());
 		
 	// Linked List
-	LinkedList<Integer> linkedlist=new LinkedList<Integer>();
+	LinkedList<Integer> linkedlist=new LinkedList<>();
 	linkedlist.add(89);
 	linkedlist.add(8);
 	linkedlist.add(192);
@@ -72,9 +75,9 @@ public class Main
 
 
 	// Pair
-	Pair x = new Pair(3, 4); 
-	Pair y = new Pair(3, 4); 
-	System.out.println(p1.equals(p2));
+// 	Pair<Integer,Integer> p1 = new Pair<Integer,Integer>(3, 4); 
+// 	Pair<Integer,Integer> p2 = new Pair<Integer,Integer>(3, 4); 
+// 	System.out.println(p1.equals(p2));
 
 
 	// HashMap
