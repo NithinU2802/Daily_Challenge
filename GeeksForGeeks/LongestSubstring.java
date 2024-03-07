@@ -17,9 +17,9 @@ Input:
 n = 9
 s = "acdcdacdc"
 Output:
-"acd"
+"acdc"
 Explanation:
-The string "acd" is the longest Substring of s which is repeating but not overlapping.
+The string "acdc" is the longest Substring of s which is repeating but not overlapping.
 Example 2:
 
 Input:
