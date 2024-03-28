@@ -28,9 +28,10 @@ public class SortByAttribute {
         nodeList.add(new Node("B", 8, 1));
         nodeList.add(new Node("C", 2, 7));
         Collections.sort(nodeList);
-
+        Collections.reverse(nodeList);
         for (Node node : nodeList) {
             System.out.println(node.getC());
         }
+        
     }
 }
