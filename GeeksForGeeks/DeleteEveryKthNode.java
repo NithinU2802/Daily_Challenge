@@ -41,7 +41,7 @@ Constraints:
 
 
 *******************************************************************************/
-import java.uitl.*;
+import java.util.*;
 
 class Node{
     
@@ -56,7 +56,7 @@ class Node{
 public class DeleteEveryKthNode
 {
     
-    Node delete(Node head, int k)
+    static Node delete(Node head, int k)
     {
         if(k==1)
             return null;
@@ -87,12 +87,12 @@ public class DeleteEveryKthNode
 		Node head=null,prev=null;
 		int n=x.nextInt();
 		for(int i=0;i<n;i++){
-		    Node n=new Node(x.nextInt());
+		    Node node=new Node(x.nextInt());
 		    if(head==null)
-		        head=n;
+		        head=node;
 		    else
-		        prev.next=n;
-		    prev=n;
+		        prev.next=node;
+		    prev=node;
 		}
 		int k=x.nextInt();
 		head=delete(head,k);
