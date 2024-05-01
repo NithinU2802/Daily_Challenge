@@ -50,7 +50,7 @@ class Node{
     }
 }
 
-public class Main
+public class arrangeCV
 {
     
     static boolean isVowel(char a){
